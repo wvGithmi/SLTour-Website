@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+
+        <title>Categories</title>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <style>
+            /*Styling background*/
+            body{
+                margin: 0;
+                background-image: url("Background4.jpg");
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-attachment: fixed;
+                background-size: cover;
+                opacity: 0.9;
+            }
+
+            /*Styling image*/
+            #image{
+                width: 380px;
+                height: 300px;
+                border: 2px solid #fff;
+                float: left;
+                color: whitesmoke;
+                font-size: 30px;
+                -webkit-box-shadow: 10px 10px 5px rgb(81, 195, 230);
+                -moz-box-shadow: 10px 10px 5px rgb(81, 195, 230);
+                box-shadow: 10px 10px 5px rgb(81, 195, 230);
+                /*-webkit-border-radius:25px;
+                -moz-border-radius:25px;
+                border-radius:25px;*/
+            }
+
+            .container{
+                width: 1280px;
+                min-height: 750px;
+                background: #fff;
+                margin: 120px auto 0;
+                display: flex; 
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .container .box{
+                position: relative;
+                width: 300px;
+                height: 300px;
+                background: lightskyblue;
+                margin: 10px;
+                box-sizing: border-box;
+                display: inline-block;
+            }
+
+            .container .box .imgBox{
+                position: relative;
+                overflow: hidden;
+            }
+
+            .container .box .imgBox img{
+                max-width: 100%;
+                transition: transform 2s;
+            }
+
+            .container .box:hover .imgBox img{
+                transform: scale(1.2);
+            }
+
+            .container .box .details{
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                bottom: 10px;
+                right: 10px;
+                background: rgba(0, 0, 0, 0.8);
+                transform: scaleY(0);
+                transition: transform 0.5s;
+            }
+
+            .container .box:hover .details{
+                transform: scaleY(1);
+            }
+
+            .container .box .details .content{
+                position: absolute;
+                top: 5px;
+                transform: scale3d(1, 1, 1);
+                text-align: center;
+                padding: 2px;
+                color: whitesmoke;
+            }
+
+            .container .box .details .content h2{
+                margin: 0;
+                padding-bottom: 3px;
+                font-size: 20px;
+                color: yellow;
+            }
+
+            .container .box .details .content p{
+                max-width: 2px 0 0;
+            }
+        </style>
+
+        <link rel="stylesheet" type="text/css" href="header.css">
+        <link rel="stylesheet" type="text/css" href="homebtn.css">
+        <link rel="stylesheet" type="text/css" href="topic.css">
+        <link rel="stylesheet" type="text/css" href="footer.css">
+
+        <script src="https://kit.fontawesome.com/1444c35fd1.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+
+        <!--Header-->
+        <header>
+            <div class="topnav">
+                <div class="logo">
+                    <img id="logo" src="SLTourOriginal.png" style="float: left;">
+                </div>
+                <ul class="topnav">
+                    <li><a href="Sri Lanka & Tourism.html">Sri Lanka & Tourism</a></li>
+                    <li><a href="Places to Visit.html">Places to Visit</a></li>
+                    <li><a href="Categories.html">Categories</a></li>
+                    <li><a href="Accommodation.html">Accomadation</a></li>
+                    <li><a href="Tour Guides.html">Tour Guides</a></li>
+                    <li><a href="Contact Us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </header>
+        <br>
+
+        <!--Home-Button-->
+        <div class="container-x">
+            <button class="btn btn1"><a href="SLTour-homepage.html">Home</a></button>
+        </div>
+
+        <!--Main-Heading-->
+        <div class="centertext">
+            <p>Categories</p>
+        </div>
+
+        <!--Categories-->
+        <div class="container">
+            <div class="box">
+                <div class="imgBox">
+                    <img id="image" src="wildlife.jfif" alt="wildlife">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>Wildlife Tours</h2>
+                        <p>There are so many thrilling wildlife safaris you could choose from Sri Lanka.
+                            You'll see a lot of elephants, be able to take lots of photographs, as well 
+                            as experience our unique ever smiling mix of people and cultures. 
+                            You'll simply have a great time here!
+                        </p><br>
+                        <ul>
+                            <li>Yala National Park</li>
+                            <li>Wilpattu National Park</li>
+                            <li>Udawalawe National Park</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img id="image" src="beach.jfif" alt="beach">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>Beach Fun</h2>
+                        <p>Sri Lanka is a beautiful island located in the Indian ocean. Although we have 
+                            numerous Golden beaches. One of the best parts of Sri Lankan tours is these 
+                            wonderful sun-kissed sandy stretches. According to the country's coastal 
+                            regions, you can choose what most suits your choice.
+                        </p><br>
+                        <ul>
+                            <li>Arugam Bay Beach</li>
+                            <li>Mirissa Beach</li>
+                            <li>Hiriketiya Beach</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img id="image" src="heritage.jfif" alt="heritage">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>Heritage Sites</h2>
+                        <p>Sri Lanka has nearly 3000 years of great history with ancient cities, palaces, temples,
+                            monasteries, hospitals, cafes, etc. UNESCO has also listed 8 World Heritage sites in 
+                            Sri Lanka. These places are located in a historical location with cultural and 
+                            anthropological importance.
+                        </p><br>
+                        <ul>
+                            <li>Ancient City of Sigiriya</li>
+                            <li>Sacred City of Anuradhapura</li>
+                            <li>Golden Temple of Dambulla</li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img id="image" src="diving.jfif" alt="diving">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>Diving Tours</h2>
+                        <p>The great Diving spots in here make for a fun experience whether you are well-experienced 
+                            in diving or are an amateur. The warm nutrient-rich waters, the hot tropical weather, 
+                            and an ideal location make Sri Lanka the perfect holiday destination for lovers of diving.
+                        </p><br>
+                        <ul>
+                            <li>Hikkaduwa Diving Tour</li>
+                            <li>Kalpitiya Bar Reef Diving Tour</li>
+                            <li>Trincomalee and Nilaveli Pigeon Island Diving Tour</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img id="image" src="tea.jfif" alt="tea">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>Diving</h2>
+                        <p>Beaches of Sri Lanka</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img id="image" src="surfing.jfif" alt="surfing">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>Diving</h2>
+                        <p>Beaches of Sri Lanka</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img id="image" src="hiking.jfif" alt="hiking">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>Diving</h2>
+                        <p>Beaches of Sri Lanka</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img id="image" src="whale_watching.jpg" alt="whale-watching">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>Diving</h2>
+                        <p>Beaches of Sri Lanka</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img id="image" src="nature_trails.jpg" alt="nature-trails">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>Diving</h2>
+                        <p>Beaches of Sri Lanka</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img id="image" src="culture.jfif" alt="culture">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>Diving</h2>
+                        <p>Beaches of Sri Lanka</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img id="image" src="bird_watching.jfif" alt="bird-watching">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>Diving</h2>
+                        <p>Beaches of Sri Lanka</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img id="image" src="ayurvedic.jfif" alt="ayurvedic">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>Diving</h2>
+                        <p>Beaches of Sri Lanka</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div class="footer">
+            <div class="inner-footer">
+                <div class="footer-items">
+                    <h1>SLTour</h1>
+                    <img class="footer-logo" src="SLTourOriginal.png">
+                    <p>We want to give you the best traveling experience in Sri Lanka</p>
+                </div>
+
+                <div class="footer-items">
+                    <h2>Quick Links</h2>
+                    <div class="border">
+                        <ul>
+                            <li><a href="Sri Lanka & Tourism.html">Sri Lanka & Tourism</a></li>
+                            <li><a href="Places to Visit.html">Places to Visit</a></li>
+                            <li><a href="Categories.html">Categories</a></li>
+                            <li><a href="Accommodation.html">Accomodation</a></li>
+                            <li><a href="Tour Guides.html">Tour Guides</a></li>
+                            <li><a href="Contact Us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-items">
+                    <h2>Contact Us</h2>
+                    <div class="border"></div>
+                    <ul>
+                        <li><i class="fas fa-mobile-alt" aria-hidden="true"></i>0779348204</li>
+                        <li><i class="fas fa-phone" aria-hidden="true"></i>0913566788</li>
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i>sltour@gmail.com</li>
+                    </ul>
+                    <br>
+                    <div class="social-media" style="float: left;">
+                        <a href="#"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-instagram-square" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                Copyright &copy; SL Tour 2020. All rights reserved.
+            </div>
+        </div>
+            
+    </body>
+</html>

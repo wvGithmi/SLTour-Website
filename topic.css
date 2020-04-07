@@ -1,0 +1,34 @@
+.centertext{
+    width: 80vw;
+    margin: 2.5vw auto;
+}
+
+.centertext p{
+    text-align: center;
+    font-size: 5vw;
+    color: rgb(126, 9, 9);
+    font-weight: bold;
+    font-family: monospace;
+    animation: textanimation 1s ease-in-out;
+}
+
+@keyframes textanimation{
+    0%{
+        letter-spacing: 2vw;
+    }
+    100%{
+        letter-spacing: 0.1vw;
+    }
+}
+
+/*Styling sub-headers*/
+#heading{
+    text-align: left;
+    padding-left: 4vw;
+    padding-top: 1vw;
+    font-family: sans-serif;
+    font-style: oblique;
+    color: darkblue;
+    font-size: 3vw;
+    font-weight: bold;
+}

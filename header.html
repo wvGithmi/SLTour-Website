@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+
+        <title>Header</title>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+
+        <script src="https://kit.fontawesome.com/1444c35fd1.js" crossorigin="anonymous"></script>
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: "montserrat", sans-serif;
+                box-sizing: border-box;
+            }
+
+            header{
+                height: 110px;
+                background-color: rgb(0, 0, 0);
+                opacity: 0.4;
+                padding: 0.5vw 1vw;
+                color: white;
+                position: relative;
+                clear: both;
+                margin-bottom: 3vw;
+            }
+
+            /*Styling the top navigation bar*/
+            .topnav{
+                list-style: none;
+                overflow: hidden;
+            }
+
+            /*Styling the topnav links*/
+            .topnav a{
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                font-size: 1.25vw;
+                font-weight: lighter;
+                text-transform: uppercase;
+                padding: 1vw 0.75vw;
+                text-decoration: none;
+                transition: 0.4s;
+            }
+
+            /*Changing color on hover*/
+            .topnav a:hover{
+                color: gold;
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+
+            .topnav li{
+                min-width: 8px;
+                float: left;
+                margin-right: 2px;
+                margin-left: 2px;
+                text-align: center;
+            }
+
+            .topnav li a:link,
+            .topnav li a:visited{
+                text-decoration: none;
+                margin: 0 0 0.2px 0;  
+            }
+
+            /*Styling SLTour logo*/
+            #logo{
+                width: 10vw;
+                height: 5vw;
+                padding-bottom: 1vw;
+                margin-right: 1vw;
+            }
+
+            div.logo {
+                margin-top: 1vw;
+                margin-right: 1vw;
+            }
+
+            /*Styling menu-button*/
+            .show-menu-btn, .hide-menu-btn{
+                transition: 0.4s;
+                font-size: 30px;
+                cursor: pointer;
+                display: none;
+            }
+
+            .show-menu-btn{
+                float: left;
+            }
+
+            .show-menu-btn i{
+                line-height: 100px;
+            }
+
+            .show-menu-btn:hover, .hide-menu-btn:hover{
+                color: #3498db;
+            }
+
+            #chk{
+                position: absolute;
+                visibility: hidden;
+                z-index: -1111;
+            }
+
+            /*@media screen and (max-width: 800px){
+                .show-menu-btn, .hide-menu-btn{
+                    display: block;
+                }
+
+                .topnav{
+                    position: fixed;
+                    width: 100%;
+                    height: 100vh;
+                    background: #333;
+                    right: -100%;
+                    top: 0;
+                    text-align: center;
+                    padding: 80px 0;
+                    line-height: normal;
+                    transition: 0.7s;
+                }
+
+                .topnav a{
+                    display: block;
+                    padding: 20px;
+                }
+
+                .hide-menu-btn{
+                    position: absolute;
+                    top: 40px;
+                    right: 40px;
+                }
+
+                #chk:checked ~ .menu{
+                    right: 0;
+                }
+            }*/
+        </style>
+
+    </head>
+    <body>
+
+        <!--Header-->
+        <header>
+            <div class="topnav">
+                <div class="logo">
+                    <img id="logo" src="SLTourOriginal.png" style="float: right;">
+                </div>
+                <input type="checkbox" id="chk">
+                <label for="chk" class="show-menu-btn">
+                    <i class="fas fa-ellipsis-h"></i>
+                </label>
+                <ul class="topnav">
+                    <li><a href="Sri Lanka & Tourism.html">Sri Lanka & Tourism</a></li>
+                    <li><a href="Places to Visit.html">Places to Visit</a></li>
+                    <li><a href="Categories.html">Categories</a></li>
+                    <li><a href="Accommodation.html">Accomadation</a></li>
+                    <li><a href="Tour Guides.html">Tour Guides</a></li>
+                    <li><a href="Contact Us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </header>
+        <br>
+
+    </body>
+</html>
