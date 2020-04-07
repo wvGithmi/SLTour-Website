@@ -9,12 +9,69 @@
             /*Styling background*/
             body{
                 margin: 0;
-                background-image: url("Background3.jpg");
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-attachment: fixed;
+                padding: 0px;
+                background: #AEA8BA;
                 background-size: cover;
-                opacity: 0.8;
+                -webkit-background-size: cover;
+                -mox-background-size: cover;
+                -o-background-size: cover;
+                height: calc(100vh - 80px);
+            }
+
+            /*Styling image-slider*/
+            #slider{
+                overflow: hidden;
+            }
+
+            #slider figure{
+                position: relative;
+                width: 500%;
+                margin: 0;
+                animation: 20s slider infinite;
+            }
+
+            #slider figure img{
+                height: 700px;
+                width: 20%;
+                float: left;
+                padding-bottom: 60px;
+            }
+
+            @media (max-width: 858px){
+                #slider figure img{
+                    height: 350px;
+                    width: 20%;
+                }
+            }
+
+            @keyframes slider{
+                0%{
+                    left: 0;
+                }
+                20%{
+                    left: 0;
+                }
+                25%{
+                    left: -100%;
+                }
+                45%{
+                    left: -100%;
+                }
+                50%{
+                    left: -200%;
+                }
+                70%{
+                    left: -200%;
+                }
+                75%{
+                    left: -300%;
+                }
+                95%{
+                    left: -300%; 
+                }
+                100%{
+                    left: -400%;
+                }
             }
         </style>
 
@@ -29,26 +86,25 @@
     <body>
 
         <!--Header-->
-        <header>
-            <div class="topnav">
-                <div class="logo">
-                    <img id="logo" src="SLTourOriginal.png" style="float: left;">
-                </div>
-                <ul class="topnav">
-                    <li><a href="Sri Lanka & Tourism.html">Sri Lanka & Tourism</a></li>
-                    <li><a href="Places to Visit.html">Places to Visit</a></li>
-                    <li><a href="Categories.html">Categories</a></li>
-                    <li><a href="Accommodation.html">Accomadation</a></li>
-                    <li><a href="Tour Guides.html">Tour Guides</a></li>
-                    <li><a href="Contact Us.html">Contact Us</a></li>
-                </ul>
-            </div>
-        </header>
-        <br>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label><img class="logo" src="SLTourOriginal.png"></label>
+            <ul>
+                <li><a href="Sri Lanka & Tourism.html">Sri Lanka & Tourism</a></li>
+                <li><a href="Places to Visit.html">Places to Visit</a></li>
+                <li><a href="Categories.html">Categories</a></li>
+                <li><a href="Accommodation.html">Accommodation</a></li>
+                <li><a href="Tour Guides.html">Tour Guides</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+            </ul>
+        </nav>
 
         <!--Home-Button-->
         <div class="container-x">
-            <button class="btn btn1"><a href="SLTour-homepage.html">Home</a></button>
+            <button class="btn btn1"><a href="index.html">Home</a></button>
         </div>
 
         <!--Main-Heading-->
@@ -56,11 +112,22 @@
             <p>Places to Visit</p>
         </div>
 
+        <!--Image-Slider-->
+        <div id="slider">
+            <figure>
+                <img src="img-slide1.jpg">
+                <img src="img-slide2.jpg">
+                <img src="img-slide3.webp">
+                <img src="img-slide4.jpg">
+                <img src="img-slide1.jpg">
+            </figure>
+        </div>
+
         <!--Sub-Heading-->
         <h1 id="heading" style="padding-left: 55px;">Tourist Map of Sri Lanka</h1>
 
         <!--Sri Lanka Tourism Map-->
-        <img src="SrilankaMap.jpg" style="padding: 30px 0px; display: block; margin: 0 auto; height: 2800px; width: 1400px;">
+        <img src="SrilankaMap.jpg" style="padding: 2vw 0vw; display: block; margin: 0 auto; height: 115vw; width: 90vw;">
 
         <!--Footer-->
         <div class="footer">
