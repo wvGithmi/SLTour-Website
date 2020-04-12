@@ -6,7 +6,7 @@
 .centertext p{
     text-align: center;
     font-size: 3vw;
-    color: rgb(126, 9, 9);
+    color: darkblue;
     font-weight: bold;
     font-family: monospace;
     animation: textanimation 1s ease-in-out;
@@ -28,7 +28,7 @@
     padding-top: 1vw;
     font-family: monospace;
     font-style: oblique;
-    color: darkblue;
+    color: rgb(126, 9, 9);
     font-size: 2.5vw;
     font-weight: bold;
 }
