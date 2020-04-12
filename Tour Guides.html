@@ -10,41 +10,35 @@
             body{
                 margin: 0;
                 padding: 0;
-                font-family: sans-serif;
-                background-image: url("Background6.jpg");
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-attachment: fixed;
-                background-size: cover;
-                opacity: 0.8;
             }
 
+            /*Styling box*/
             .box{
                 width: 45%;
-                height: 200px;
-                background: black;
+                height: 185px;
                 margin: 20px auto;
                 display: inline-block;
-                border: 2px solid grey;
-                box-shadow: 5px 5px;
-                margin: 20px;
+                margin-right: 30px;
                 margin-left: 35px;
+                background: rgb(240, 207, 23);
+                opacity: 0.9;
+                border: 2px solid grey;
+                border-radius: 25px;
+                -webkit-border-radius: 25px;
+                -moz-border-radius: 25px;
+                -o-border-radius: 25px;
+                box-shadow: 5px 5px 2.5px rgb(0, 0, 0);
+                -webkit-box-shadow: 5px 5px 2.5px rgb(0, 0, 0);
+                -moz-box-shadow: 5px 5px 2.5px rgb(0, 0, 0);
+                -o-box-shadow: 5px 5px 2.5px rgb(0, 0, 0);
             }
 
             .box:hover{
-                opacity: 0.9;
-                box-shadow: 5px 5px blue;
+                box-shadow: 5px 5px gray;
+                opacity: 0.8;
             }
 
-            @media screen and (max-width: 1200px) {
-                .box{
-                    width: 100%;
-                    height: 200px;
-                    background: black;
-                    margin: 10px auto;
-                }
-            }
-
+            /*Styling profile-image*/
             #profile-img{
                 width: 180px;
                 height: 180px;
@@ -53,16 +47,7 @@
                 float: left;
             }
 
-            @media screen and (max-width: 1200px) {
-                #profile-img{
-                    width: 80px;
-                    height: 80px;
-                    padding: 5px 5px;
-                    vertical-align: middle;
-                    float: left;
-                }
-            }
-
+            /*Styling box-container*/
             .box .container{
                 float: left;
                 padding-left: 15px;
@@ -72,11 +57,11 @@
             .box .container h2{
                 font-size: 25px;
                 color: red;  
+                padding-bottom: 7px;
             }
 
             .box .container p{
                 font-size: 17px;
-                color: whitesmoke;
             }
 
             .box .container a{
@@ -90,23 +75,33 @@
                 color: crimson;
             }
 
-            @media screen and (max-width: 1200px) {
-                .container{
+            @media screen and (max-width: 858px) {
+                .box{
+                    width: 100%;
+                    height: 110px;
+                    margin: 10px auto;
+                }
+
+                #profile-img{
+                    width: 80px;
+                    height: 80px;
+                    padding: 5px 5px;
+                    vertical-align: middle;
+                    float: left;
+                }
+
+                .box .container{
                     float: left;
                     padding-left: 12px;
                     padding-top: 7px;            
                 }
-            }
 
-            @media screen and (max-width: 1200px){
-                .container h2{
+                .box .container h2{
                     font-size: 15px;
                     color: blue;
                 }
-            }
 
-            @media screen and (max-width: 1200px){
-                .container p{
+                .box .container p{
                     font-size: 10px;
                 }
             }
@@ -118,6 +113,8 @@
         <link rel="stylesheet" type="text/css" href="img_slider.css">
         <link rel="stylesheet" type="text/css" href="footer.css">
 
+        <script src="https://kit.fontawesome.com/1444c35fd1.js" crossorigin="anonymous"></script>
+
     </head>
     <body>
 
@@ -127,7 +124,7 @@
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
-            <label><img class="logo" src="SLTourOriginal.png"></label>
+            <label><img class="logo" src="sltour-logo.png"></label>
             <ul>
                 <li><a href="Sri Lanka & Tourism.html">Sri Lanka & Tourism</a></li>
                 <li><a href="Places to Visit.html">Places to Visit</a></li>
@@ -154,8 +151,8 @@
             <figure>
                 <img src="img-slide1.jpg">
                 <img src="img-slide2.jpg">
-                <img src="img-slide3.webp">
-                <img src="img-slide4.jpg">
+                <img src="img-slide3.jpg">
+                <img src="img-slide4.webp">
                 <img src="img-slide1.jpg">
             </figure>
         </div>
@@ -169,9 +166,9 @@
                 <h2>P. Duminda Samarakoon</h2>
                 <p>Category : Chauffeur<br>
                    Languages : English<br>
-                   Tel : 0714483643<br>
+                   Tel : <a href="tel:+94714483643">0714483643</a><br>
                    Address : No. 224, Akarawita, Gampaha.<br>
-                   Email : dumindasamarakoon1@gmail.com
+                   Email : <a href="mailto:dumindasamarakoon1@gmail.com">dumindasamarakoon1@gmail.com</a>
                 </p>
             </div>
         </div>
@@ -181,9 +178,9 @@
                 <h2>J.M. SUNIL JAYASINGHE</h2>
                 <p>Category : National<br>
                    Languages : German<br>
-                   Tel : 0777171317<br>
+                   Tel : <a href="tel:+94777171317">0777171317</a><br>
                    Address : No. 230/3, Ranawana road, Katugastota.<br>
-                   Email : Sunil.jsngh@gmail.com
+                   Email : <a href="mailto:Sunil.jsngh@gmail.com">Sunil.jsngh@gmail.com</a>
                 </p>
             </div>
         </div>
@@ -194,7 +191,7 @@
                 <p>Category : National<br>
                    Languages : English<br>
                    Address : 3rd lane, Kindamullawatta, Veyangoda.<br>
-                   Email : yapajayatilaka@yahoo.com
+                   Email : <a href="mailto:yapajayatilaka@yahoo.com">yapajayatilaka@yahoo.com</a>
                 </p>
             </div>
         </div>
@@ -204,9 +201,9 @@
                 <h2>S.M.K.CHULANIE PERERA</h2>
                 <p>Category : National<br>
                    Languages : French<br>
-                   Tel : 0777584310<br>
+                   Tel : <a href="tel:+94777584310">0777584310</a><br>
                    Address : 104/2, Kandawatte road, Nugegoda.<br>
-                   Email : kamalperera112@yahoo.com
+                   Email : <a href="mailto:kamalperera112@yahoo.com">kamalperera112@yahoo.com</a>
                 </p>
             </div>
         </div>
@@ -216,9 +213,9 @@
                 <h2>G.M.SARATH SILVA</h2>
                 <p>Category : National<br>
                    Languages : English<br>
-                   Tel : 077608861<br>
-                   Address : No. 4/115, Talakotuwa gardens, Polhengoda road,<br>Colombo 5.<br>
-                   Email : sarathmanawadu2@gmail.com
+                   Tel : <a href="tel:+9477608861">077608861</a><br>
+                   Address : No. 4/115, Talakotuwa gardens,<br>Polhengoda road, Colombo 5.<br>
+                   Email : <a href="mailto:sarathmanawadu2@gmail.com">sarathmanawadu2@gmail.com</a>
                 </p>
             </div>
         </div>
@@ -228,9 +225,9 @@
                 <h2>H.S. WEERASIRI PEIRIS</h2>
                 <p>Category : National<br>
                    Languages : German<br>
-                   Tel : 0777713817<br>
-                   Address : No.6,st. Jude mawatha, Dalugama, Kelaniya.<br>
-                   Email : susil@ymail.com
+                   Tel : <a href="tel:+94777713817">0777713817</a><br>
+                   Address : No.6,st. Jude mawatha, Dalugama,Kelaniya.<br>
+                   Email : <a href="mailto:susil@ymail.com">susil@ymail.com</a>
                 </p>
             </div>
         </div>
@@ -240,9 +237,9 @@
                 <h2>SOMAPALA KARUNANAMGE</h2>
                 <p>Category : National<br>
                    Languages : French<br>
-                   Tel : 0777280421<br>
+                   Tel : <a href="+94777280421">0777280421</a><br>
                    Address : No. 128/3, Pirivena road, Boralesgamuwa.<br>
-                   Email : saknik@sltnet.lk
+                   Email : <a href="mailto:saknik@sltnet.lk">saknik@sltnet.lk</a>
                 </p>
             </div>
         </div>
@@ -252,9 +249,9 @@
                 <h2>ANANDA WEERAKOON</h2>
                 <p>Category : National<br>
                    Languages : English<br>
-                   Tel : 0777719172<br>
+                   Tel : <a href="+94777719172">0777719172</a><br>
                    Address : 3m3, housing scheme, Kiribathgoda.<br>
-                   Email : anandaweera1947@gmail.com
+                   Email : <a href="mailto:anandaweera1947@gmail.com">anandaweera1947@gmail.com</a>
                 </p>
             </div>
         </div>
@@ -264,9 +261,9 @@
                 <h2>D.R.J.RANJITH DASANAYAKE</h2>
                 <p>Category : National<br>
                    Languages : Japanese<br>
-                   Tel : 0777385209<br>
+                   Tel : <a href="+94777385209">0777385209</a><br>
                    Address : No.424/c, Akuregoda, Battaramulla.<br>
-                   Email : rankoin@gmail.com
+                   Email : <a href="mailto:rankoin@gmail.com">rankoin@gmail.com</a>
                 </p>
             </div>
         </div>
@@ -276,12 +273,14 @@
                 <h2>M.H.S.SHANTHA KUMARA</h2>
                 <p>Category : National<br>
                    Languages : Italian<br>
-                   Tel : 0777398842<br>
+                   Tel : <a href="+94777398842">0777398842</a><br>
                    Address : 898/2c, Thalagaha junction, New town Gothatuwa.<br>
-                   Email : shantha-kumar@live.com
+                   Email : <a href="mailto:shantha-kumar@live.com">shantha-kumar@live.com</a>
                 </p>
             </div>
         </div>
+
+        <img src="clipart.png" style="width: 100%; height: 350px; margin-top: 20px; margin-bottom: 20px;">
     
         <!--Travel Agencies-->
         <br><br><br>
@@ -293,10 +292,10 @@
                 <h2>1 A Senira Travels And Tours</h2>
                 <p>Address : No. 405 old Kottawa road, Udahamulla, Nugegoda.<br>
                    Web : <a href="www.1asenira.com">www.1asenira.com</a><br>
-                   Email : 1asenira@gmail.com<br>
+                   Email : <a href="mailto:1asenira@gmail.com">1asenira@gmail.com</a><br>
                    District : Colombo<br>
-                   Telephone : 0112834450<br>
-                   Fax : 0112833662
+                   Telephone : <a href="tel:+94112834450">0112834450</a><br>
+                   Fax : <a href="fax:+94112833662">0112833662</a>
                 </p>
             </div>
         </div>
@@ -306,9 +305,9 @@
                 <h2>360 Tours Lanka</h2>
                 <p>Address : 367/4, Atgala, Kochchikade.<br>
                    Web : <a href="www.360tourslanka.com">www.360tourslanka.com</a><br>
-                   Email : info@360tourslanka.com<br>
+                   Email : <a href="mailto:info@360tourslanka.com">info@360tourslanka.com</a><br>
                    District : Gampaha<br>
-                   Telephone : 0779301088
+                   Telephone : <a href="tel:+94779301088">0779301088</a>
                 </p>
             </div>
         </div>
@@ -318,10 +317,10 @@
                 <h2>361 Degrees (pvt) Ltd</h2>
                 <p>Address : No.41/30, dm Coloambage mawatha, Colombo 05.<br>
                    Web : <a href="www.361i.lk">www.361i.lk</a><br>
-                   Email : onfo@361i.lk<br>
+                   Email : <a href="mailto:onfo@361i.lk">onfo@361i.lk</a><br>
                    District : Colombo<br>
-                   Telephone : 5833331<br>
-                   Fax : 5288120
+                   Telephone : <a href="tel:+94115833331">115833331</a><br>
+                   Fax : <a href="fax:+94115288120">0115288120</a>
                 </p>
             </div>
         </div>
@@ -331,9 +330,9 @@
                 <h2>8d Srilanka</h2>
                 <p>Address : 86/8/1 capt. Vipula Seneviratne mw, Thalwatte,<br>Kandy.<br>
                    Web : <a href="www.8dsrilanka.com">www.8dsrilanka.com</a><br>
-                   Email : 8dsrilanka@gmail.com<br>
+                   Email : <a href="mailto:8dsrilanka@gmail.com">8dsrilanka@gmail.com</a><br>
                    District : Kandy<br>
-                   Telephone : 0812222084
+                   Telephone : <a href="tel:+94812222084">0812222084</a>
                 </p>
             </div>
         </div>
@@ -343,9 +342,9 @@
                 <h2>A & A Travels (pvt) Ltd</h2>
                 <p>Address : No. 4/4, 1/1, hotel road, Mount Lavina.<br>
                    Web : <a href="www.anasrilanka.com">www.anasrilanka.com</a><br>
-                   Email : amraz@anasrilanka.com<br>
+                   Email : <a href="mailto:amraz@anasrilanka.com">amraz@anasrilanka.com</a><br>
                    District : Colombo<br>
-                   Telephone : 0117213935
+                   Telephone : <a href=tel:+94117213935">0117213935</a>
                 </p>
             </div>
         </div>
@@ -354,10 +353,10 @@
             <div class="container">
                 <h2>A B Travels Pvt Ltd</h2>
                 <p>Address : 93 allan avenue, Dehiwala.<br>
-                   Email : info@abtravelssrilanka.com<br>
+                   Email : <a href="mailto:info@abtravelssrilanka.com">info@abtravelssrilanka.com</a><br>
                    District : Colombo<br>
-                   Telephone : 0117398880<br>
-                   Fax : 0117398883
+                   Telephone : <a href="tel:+94117398880">0117398880</a><br>
+                   Fax : <a href="fax:+94117398883">117398883</a>
                 </p>
             </div>
         </div>
@@ -366,10 +365,10 @@
             <div class="container">
                 <h2>Aaliya Travels & Tours (pvt) Ltd</h2>
                 <p>Address : No.278, Madeena bazar, Siyabalagaskotuwa,<br>Narammala.<br>
-                   Email : aaliya.travels3@gmail.com<br>
+                   Email : <a href="mailto:aaliya.travels3@gmail.com">aaliya.travels3@gmail.com</a><br>
                    District : Kurunegala<br>
-                   Telephone : 0372220292<br>
-                   Fax : 0372247852
+                   Telephone : <a href="tel:+94372220292">0372220292</a><br>
+                   Fax : <a href="fax:+94372247852">0372247852</a>
                 </p>
             </div>
         </div>
@@ -379,10 +378,10 @@
                 <h2>Adithya Lanka Holidays (pvt) Ltd</h2>
                 <p>Address : No.136/b, Kandy road, Kalalpitiya, Pasyala.<br>
                    Web : <a href="www.adithyalankaholidays.com">www.adithyalankaholidays.com</a><br>
-                   Email : hasantha@adithyalankaholidays.com<br>
+                   Email : <a href="mailto:hasantha@adithyalankaholidays.com">hasantha@adithyalankaholidays.com</a><br>
                    District : Gampaha<br>
-                   Telephone : 0333720504<br>
-                   Fax : 0718802290
+                   Telephone : <a href="tel:+94333720504">0333720504</a><br>
+                   Fax : <a href="fax:+94718802290">0718802290</a>
                 </p>
             </div>
         </div>
@@ -393,9 +392,9 @@
                 <h2>Airkingdom Travel And Tourism</h2>
                 <p>Address : No.14/c,, Hill street, Gampola.<br>
                    Web : <a href="www.golux.com/srilanka">www.golux.com/srilanka</a><br>
-                   Email : booking@airkingdomtravel.com<br>
+                   Email : <a href="mailto:booking@airkingdomtravel.com">booking@airkingdomtravel.com</a><br>
                    District : Kandy<br>
-                   Telephone : 0815632518
+                   Telephone : <a href="tel:+94815632518">0815632518</a>
                 </p>
             </div>
         </div>
@@ -405,9 +404,9 @@
                 <h2>Akiyo Lanka (pvt) Ltd</h2>
                 <p>Address : 2nd floor Akiyo building, no. 282, Kandy road,<br>Peliyagoda.<br>
                    Web : <a href="http://www.akiyolanka.com/en/">http://www.akiyolanka.com/en/</a><br>
-                   Email : info@akiolanka.com<br>
+                   Email : <a href="mailto:info@akiolanka.com">info@akiolanka.com</a><br>
                    District : Gampaha<br>
-                   Telephone : 0112986126
+                   Telephone : <a href="tel:+94112986126">0112986126</a>
                 </p>
             </div>
         </div>
@@ -416,34 +415,30 @@
         <div class="footer">
             <div class="inner-footer">
                 <div class="footer-items">
-                    <h1>SLTour</h1>
-                    <img class="footer-logo" src="SLTourOriginal.png">
-                    <p>We want to give you the best traveling experience in Sri Lanka</p>
+                    <img class="footer-logo" src="sltour-logo.png">
+                    <p>Have the best traveling experience in<br>Sri Lanka</p>
                 </div>
 
                 <div class="footer-items">
                     <h2>Quick Links</h2>
-                    <div class="border">
-                        <ul>
-                            <li><a href="Sri Lanka & Tourism.html">Sri Lanka & Tourism</a></li>
-                            <li><a href="Places to Visit.html">Places to Visit</a></li>
-                            <li><a href="Accommodation.html">Accomodation</a></li>
-                            <li><a href="Tour Guides.html">Tour Guides</a></li>
-                            <li><a href="Contact Us.html">Contact Us</a></li>
-                        </ul>
-                    </div>
+                    <ul>
+                        <li><a href="Sri Lanka & Tourism.html">Sri Lanka & Tourism</a></li>
+                        <li><a href="Places to Visit.html">Places to Visit</a></li>
+                        <li><a href="Accommodation.html">Accomodation</a></li>
+                        <li><a href="Tour Guides.html">Tour Guides</a></li>
+                        <li><a href="Contact Us.html">Contact Us</a></li>
+                    </ul>
                 </div>
 
                 <div class="footer-items">
                     <h2>Contact Us</h2>
-                    <div class="border"></div>
                     <ul>
-                        <li><i class="fas fa-mobile-alt" aria-hidden="true"></i>0779348204</li>
-                        <li><i class="fas fa-phone" aria-hidden="true"></i>0913566788</li>
-                        <li><i class="fas fa-envelope" aria-hidden="true"></i>sltour@gmail.com</li>
+                        <li><i class="fas fa-mobile-alt" aria-hidden="true" style="margin-right: 28px;"></i><a href="tel:0779348204">0779348204</a></li>
+                        <li><i class="fas fa-phone" aria-hidden="true"></i><a href="tel:0913566788">0913566788</a></li>
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:sltour@gmail.com">sltour@gmail.com</a></li>
                     </ul>
                     <br>
-                    <div class="social-media" style="float: left;">
+                    <div class="social-media">
                         <a href="#"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
                         <a href="#"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
                         <a href="#"><i class="fab fa-instagram-square" aria-hidden="true"></i></a>
@@ -451,7 +446,9 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                Copyright &copy; SL Tour 2020. All rights reserved.
+                <p>Copyright &copy; SL Tour 2020. All rights reserved by Sri Lanka Tourism Promotion Bureau.
+                    <br>SE/2017/048
+                </p>
             </div>
         </div>
         

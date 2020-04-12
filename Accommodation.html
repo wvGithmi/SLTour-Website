@@ -9,24 +9,20 @@
             /*Styling background*/
             body{
                 margin: 0;
-                background-image: url("Background5.jpg");
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-attachment: fixed;
-                background-size: cover;
-                opacity: 0.9;
+                padding: 0;
             }
 
+            /*Styling box*/
             .box{
-                width: 45%;
+                width: 42%;
                 height: 220px;
-                background: black;
+                background: linear-gradient(rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.7) 50%);
                 margin: 20px auto;
                 display: inline-block;
                 border: 2px solid grey;
                 box-shadow: 5px 5px;
                 margin: 20px;
-                margin-left: 35px;
+                margin-left: 75px;
             }
 
             .box:hover{
@@ -34,15 +30,7 @@
                 box-shadow: 5px 5px blue;
             }
 
-            @media screen and (max-width: 1200px) {
-                .box{
-                    width: 100%;
-                    height: 200px;
-                    background: black;
-                    margin: 10px auto;
-                }
-            }
-
+            /*Styling profile-image*/
             #profile-img{
                 width: 200px;
                 height: 200px;
@@ -51,16 +39,7 @@
                 float: left;
             }
 
-            @media screen and (max-width: 1200px) {
-                #profile-img{
-                    width: 80px;
-                    height: 80px;
-                    padding: 5px 5px;
-                    vertical-align: middle;
-                    float: left;
-                }
-            }
-
+            /*Styling box-container*/
             .box .container{
                 float: left;
                 padding-left: 15px;
@@ -78,34 +57,55 @@
             }
 
             .box .container a{
+                color: blue;
+                background: none;
                 text-decoration: none;
                 font-size: 16px;
+                font-weight: bolder;
             }
 
             .box .container a:hover{
-                font-weight: bold;
+                font-weight: bolder;
                 font-style: italic;
                 color: crimson;
             }
 
-            @media screen and (max-width: 1200px) {
+            @media screen and (max-width: 858px) {
+                .slider{
+                    width: 100%;
+                    height: 430px;
+                }
+
+                .box{
+                    width: 100%;
+                    height: 140px;
+                    margin: 10px auto;
+                }
+
+                #profile-img{
+                    width: 110px;
+                    height: 110px;
+                    padding: 5px 5px;
+                    vertical-align: middle;
+                    float: left;
+                }
+
                 .container{
                     float: left;
                     padding-left: 12px;
                     padding-top: 7px;            
                 }
-            }
 
-            @media screen and (max-width: 1200px){
-                .container h2{
-                    font-size: 15px;
-                    color: blue;
+                .box .container h2{
+                    font-size: 14px;
                 }
-            }
 
-            @media screen and (max-width: 1200px){
-                .container p{
-                    font-size: 10px;
+                .box .container p{
+                    font-size:12px;
+                }
+
+                .box .container p a{
+                    font-size: 12px;
                 }
             }
         </style>
@@ -125,7 +125,7 @@
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
-            <label><img class="logo" src="SLTourOriginal.png"></label>
+            <label><img class="logo" src="sltour-logo.png"></label>
             <ul>
                 <li><a href="Sri Lanka & Tourism.html">Sri Lanka & Tourism</a></li>
                 <li><a href="Places to Visit.html">Places to Visit</a></li>
@@ -134,6 +134,8 @@
                 <li><a href="Contact Us.html">Contact Us</a></li>
             </ul>
         </nav>
+
+        <div class="slider"></div>
 
         <!--Home - Button-->
         <div class="container-x">
@@ -145,17 +147,20 @@
         <div class="centertext">
             <p>Accommodation</p>
         </div>
+        <br><br><br>
 
         <!--Image-Slider-->
         <div id="slider">
             <figure>
                 <img src="img-slide1.jpg">
                 <img src="img-slide2.jpg">
-                <img src="img-slide3.webp">
-                <img src="img-slide4.jpg">
+                <img src="img-slide3.jpg">
+                <img src="img-slide4.webp">
                 <img src="img-slide1.jpg">
             </figure>
         </div>
+
+        <img src="accommodation.jpg" style="float: left; width: 700px; height: 400px; margin: 150px;">
 
         <!--Star Class Hotels-->
         <h1 id="heading">Star Class Hotels</h1>
@@ -169,7 +174,7 @@
                    141 Rooms<br>
                    Web : <a href="www.anantara.com">www.anantara.com</a><br>
                    Tel : 0344297700<br>
-                   Address : St. Sebastians Road, Katukurunda, Kalutara.<br>
+                   Address : <a href="https://goo.gl/maps/jTMdUHH631csnvK18">St. Sebastians Road, Katukurunda, Kalutara.</a><br>
                    Email : achathumal@anantara.com
                 </p>
             </div>
@@ -183,7 +188,7 @@
                    51 Rooms<br>
                    Web : <a href="www.anantaya.lk">www.anantaya.lk</a><br>
                    Tel : 0652233200<br>
-                   Address : Cocount Board Road, Passekudah, Kalkudah.<br>
+                   Address : <a href="https://goo.gl/maps/cjfviEQyntNQSh6f9">Cocount Board Road, Passekudah,<br>Kalkudah.</a><br>
                    Email : accountant.passi@anantaya.lk
                 </p>
             </div>
@@ -197,7 +202,7 @@
                    192 Rooms<br>
                    Web : <a href="www.araliyagreencity.com">www.araliyagreencity.com</a><br>
                    Tel : 0522225000<br>
-                   Address : No 01, Grand Hotel Road, Nuwara Eliya.<br>
+                   Address : <a href="https://g.page/araliyagreencity?share">No 01, Grand Hotel Road, Nuwara Eliya.</a><br>
                    Email : pr@araliyagreencity.com
                 </p>
             </div>
@@ -211,11 +216,12 @@
                    501 Rooms<br>
                    Web : <a href="www.cinnamonhotels.com">www.cinnamonhotels.com</a><br>
                    Tel : 0112437437<br>
-                   Address : No. 77, Galle Road, Colombo 03.<br>
+                   Address : <a href="https://goo.gl/maps/Wt8nxBVtQM5s2y2AA">No. 77, Galle Road, Colombo 03.</a><br>
                    Email :  fazal@cinnamonhotels.com
                 </p>
             </div>
         </div>
+        <br><br><br>
 
         <!--Other Hotels-->
         <h1 id="heading">Other Hotels</h1>
@@ -228,7 +234,7 @@
                    28 Rooms<br>
                    Web : <a href="www.resort98acres.com">www.resort98acres.com</a><br>
                    Tel : 0572050050<br>
-                   Address : Uva Greenlands Estate, Namunukula Road, Ella.<br>
+                   Address : <a href="https://goo.gl/maps/e7Z2iCAn8SWWv4WR6">Uva Greenlands Estate, Namunukula Road,<br>Ella.</a><br>
                    Email : fb@resort98acres.com
                 </p>
             </div>
@@ -241,7 +247,7 @@
                    40 Rooms<br>
                    Web : <a href="www.amaaraforest.com">www.amaaraforest.com</a><br>
                    Tel : 0662277277<br>
-                   Address : No:115, Indigaswewa, Sigiriya.<br>
+                   Address : <a href="https://goo.gl/maps/SHqvdoDDX7S3khaaA">No:115, Indigaswewa, Sigiriya.</a><br>
                    Email : anton@worldlink.lk
                 </p>
             </div>
@@ -254,7 +260,7 @@
                    27 Rooms<br>
                    Web : <a href="www.amaranthebay.com">www.amaranthebay.com</a><br>
                    Tel : 0262050200<br>
-                   Address : No. 101, Alles Garden Road, Uppuveli,<br>Trincomalee.<br>
+                   Address : <a href="https://g.page/amaranthebay?share">No. 101, Alles Garden Road, Uppuveli,<br>Trincomalee.</a><br>
                    Email : ga@amaranthebay.com
                 </p>
             </div>
@@ -267,12 +273,14 @@
                    172 Rooms<br>
                    Web : <a href="www.sinolanka.com">www.sinolanka.com</a><br>
                    Tel : 0114715020<br>
-                   Address : 523c-446, Colombo Road, Ginthota, Galle.<br>
+                   Address : <a href="https://g.page/Amari-Galle?share">523c-446, Colombo Road, Ginthota, Galle.</a><br>
                    Email : sinolankaamari@gmail.com
                 </p>
             </div>
         </div>
+        <br><br><br>
         
+        <!--Bunglows-->
         <h1 id="heading">Bunglows</h1>
 
         <div class="box">
@@ -285,7 +293,7 @@
                    Web : <a href="www.15lmd.com">www.15lmd.com</a><br>
                    Tel : 0117799200<br>
                    Mobile : 0773794226<br>
-                   Address : No 87, Lady Manning Drive, Batticaloa.<br>
+                   Address : <a href="https://goo.gl/maps/rXZ83gdW85FgMUGz7">No 87, Lady Manning Drive, Batticaloa.</a><br>
                    Email : thilankal@kingslake.com
                 </p>
             </div>
@@ -299,7 +307,7 @@
                    5 Rooms<br>
                    Tel : 0112636636<br>
                    Mobile : 0714212121<br>
-                   Address : 9/1, First Lane, Ratmalana, Mount Lavinia.<br>
+                   Address : <a href="https://goo.gl/maps/98bzM5Pjb6B2uCvb6">9/1, First Lane, Ratmalana, Mount Lavinia.</a><br>
                    Email : rohanfernando@yahoo.com
                 </p>
             </div>
@@ -314,7 +322,7 @@
                    Web : <a href="www.25RampartStreet.com">www.25RampartStreet.com</a><br>
                    Tel : 0773856602<br>
                    Mobile : 0777284158<br>
-                   Address : No. 25, Rampart Stret, Fort, Galle.<br>
+                   Address : <a href="https://goo.gl/maps/KW8UGtvYx5eqxT2n8">No. 25, Rampart Stret, Fort, Galle.</a><br>
                    Email : taruvillas25@gmail.com
                 </p>
             </div>
@@ -328,12 +336,14 @@
                    8 Rooms<br>
                    Tel : 0814474022<br>
                    Mobile : 0770233652<br>
-                   Address : 258, Bowalawatta, Kandy.<br>
+                   Address : <a href="https://goo.gl/maps/vTLQaKvwBijAuUSt5">258, Bowalawatta, Kandy.</a><br>
                    Email : hillshrmgr@amayaresorts.com
                 </p>
             </div>
         </div>
+        <br><br><br>
         
+        <!--Boutique Villas-->
         <h1 id="heading">Boutique Villas</h1>
 
         <div class="box">
@@ -344,7 +354,7 @@
                    11 Rooms<br>
                    Web : <a href="https://www.angelbeachclub.com">https://www.angelbeachclub.com</a><br>
                    Tel : 0112689279<br>
-                   Address : Angel Beach, 436, Galle Road, Dalawella,<br>Thallpe.<br>
+                   Address : <a href="https://g.page/angel-beach-lk?share">Angel Beach, 436, Galle Road, Dalawella,<br>Thallpe.</a><br>
                    Email : bandulakl@gmail.com
                 </p>
             </div>
@@ -356,7 +366,7 @@
                 <p>Category : Boutique villas<br>
                    18 Rooms<br>
                    Web : <a href="www.aprotavillas.com">www.aprotavillas.com</a><br>
-                   Address : Aprota Villas Arugambay, Sedo Vadakku Veethy,<br>Urani Pottuvil P25.<br>
+                   Address : <a href="https://goo.gl/maps/nBgG8j9Wh2qopiRMA">Aprota Villas Arugambay, Sedo Vadakku<br>Veethy, Urani Pottuvil P25.</a><br>
                    Email : prasad@aprotavillas.com
                 </p>
             </div>
@@ -369,7 +379,7 @@
                    9 Rooms<br>
                    Web : <a href="www.arikavillas.com">www.arikavillas.com</a><br>
                    Tel : 0662052391<br>
-                   Address : Puwakatawala Road, 40th Mile Post, Off Matale<br>Road, Dambulla.<br>
+                   Address : <a href="https://g.page/Arikavilla?share">Puwakatawala Road, 40th Mile Post,<br>Off Matale Road, Dambulla.</a><br>
                    Email : cignatius68@yahoo.com
                 </p>
             </div>
@@ -382,12 +392,14 @@
                    5 Rooms<br>
                    Web : <a href="www.resplendentceylon.com/teatrails">www.resplendentceylon.com/teatrails</a><br>
                    Tel : 0117745730<br>
-                   Address : Castlereagh Division, Ceylon Tea Trails,<br>Dickoya, Hatton.<br>
+                   Address : <a href="https://goo.gl/maps/aEor9MFT17P8VVNS9">Castlereagh Division, Ceylon Tea Trails,<br>Dickoya, Hatton.</a><br>
                    Email : castlereagh@resplendentceylon.com
                 </p>
             </div>
         </div>
+        <br><br><br>
 
+        <!--Guest Houses-->
         <h1 id="heading">Guest Houses</h1>
 
         <div class="box">
@@ -397,7 +409,7 @@
                 <p>Category : Guest house<br>
                    Grade : B
                    12 Rooms<br>
-                   Address : No. 37, Frances Road, Wellawatte, Colombo 06.<br>
+                   Address : <a href="https://goo.gl/maps/A48zSSq9asg4yAtt5">No. 37, Frances Road, Wellawatte,<br>Colombo 06.</a><br>
                    Email : mohamedmufthy1234@gmail.com
                 </p>
             </div>
@@ -411,7 +423,7 @@
                    8 Rooms<br>
                    Web : <a href="www.aprima_hotel.com">www.aprima_hotel.com</a><br>
                    Tel : 0342226127<br>
-                   Address : No. 173, St Sebestian Road, Katukurunda,<br>Kalutara.<br>
+                   Address : <a href="https://goo.gl/maps/7RfgNdtxunGRpWtB8">No. 173, St Sebestian Road, Katukurunda,<br>Kalutara.</a><br>
                    Email : nihaldezoysa0@gmail.com
                 </p>
             </div>
@@ -424,7 +436,7 @@
                    Grade : B
                    5 Rooms<br>
                    Tel : 0662270280<br>
-                   Address : No. 90, Polonnaruwa Road, Habarana.<br>
+                   Address : <a href="https://goo.gl/maps/XqP3M91iETTi51zJ7">No. 90, Polonnaruwa Road, Habarana.</a><br>
                    Email : acmehotel280@gmail.com
                 </p>
             </div>
@@ -437,12 +449,14 @@
                    Grade : A
                    22 Rooms<br>
                    Tel : 0114385583<br>
-                   Address : No 3/c, Gangarama Road, Kovinna,<br>Adiambalama, Katunayake.<br>
+                   Address : <a href="https://goo.gl/maps/5qfYERLK4vYiS9RH6">No 3/c, Gangarama Road, Kovinna,<br>Adiambalama, Katunayake.</a><br>
                    Email : sampath@realconsultancy.lk
                 </p>
             </div>
         </div>
+        <br><br><br>
 
+        <!--Tourism Resorts-->
         <h1 id="heading">Tourism Resorts</h1>
 
         <div class="box">
@@ -452,7 +466,7 @@
                 <p>Category : Sri lanka tourism resorts<br>
                    Web : <a href="http://www.nationalholidayresorts.lk/bandarawela.html"><br>http://www.nationalholidayresorts.lk/bandarawela.html</a><br>
                    Tel : 0572222209/ 0112348887<br>
-                   Address : National Holiday Resort, Golf Link Road,<br>Bandarawela.
+                   Address : <a href="https://g.page/Nationalholidayresortbandarawela?share">National Holiday Resort, Golf Link Road,<br>Bandarawela.</a>
                 </p>
             </div>
         </div>
@@ -463,7 +477,7 @@
                 <p>Category : Sri lanka tourism resorts<br>
                 Web : <a href="http://www.nationalholidayresorts.lk/katharagama.html"><br>http://www.nationalholidayresorts.lk/katharagama.html</a><br>
                 Tel : 0112348887<br>
-                Address : National Holiday Resort Katharagama.
+                Address : <a href="https://goo.gl/maps/229twsRk9pt2v9B67">National Holiday Resort Katharagama.</a>
                 </p>
             </div>
         </div>
@@ -474,7 +488,7 @@
                 <p>Category : Sri lanka tourism resorts<br>
                 Web : <a href="http://www.nationalholidayresorts.lk/nuwaraeliya.html"><br>http://www.nationalholidayresorts.lk/nuwaraeliya.html</a><br>
                 Tel : 0522222943/ 0112348887<br>
-                Address : National Holiday Resort, Upper Lake Road,<br>Nuwara Eliya.
+                Address : <a href="https://goo.gl/maps/qtWz4ZybJczp4gBNA">National Holiday Resort, Upper Lake Road,<br>Nuwara Eliya.</a>
                 </p>
             </div>
         </div>
@@ -483,9 +497,9 @@
             <div class="container">
                 <h2>Anuradhapura Holiday Resort</h2>
                 <p>Category : Sri lanka tourism resorts<br>
-                Web : <a href="http://www.nationalholidayresorts.lk/anuradhapura.html"><br>http://www.nationalholidayresorts.lk/anuradhapura.html</a><br>
+                Web : <a href="http://www.nationalholidayresorts.lk/anuradhapura.html">http://www.nationalholidayresorts.lk/<br>anuradhapura.html</a><br>
                 Tel : 0252222188/ 0112348887<br>
-                Address : National Holiday Resort, Jayanthi Mawatha,<br>Anuradhapura.
+                Address : <a href="https://goo.gl/maps/CMnWv4EypCX8aSXy8">National Holiday Resort, Jayanthi Mawatha,<br>Anuradhapura.</a>
                 </p>
             </div>
         </div>
@@ -494,34 +508,30 @@
         <div class="footer">
             <div class="inner-footer">
                 <div class="footer-items">
-                    <h1>SLTour</h1>
-                    <img class="footer-logo" src="SLTourOriginal.png">
-                    <p>We want to give you the best traveling experience in Sri Lanka</p>
+                    <img class="footer-logo" src="sltour-logo.png">
+                    <p>Have the best traveling experience in<br>Sri Lanka</p>
                 </div>
 
                 <div class="footer-items">
                     <h2>Quick Links</h2>
-                    <div class="border">
-                        <ul>
-                            <li><a href="Sri Lanka & Tourism.html">Sri Lanka & Tourism</a></li>
-                            <li><a href="Places to Visit.html">Places to Visit</a></li>
-                            <li><a href="Accommodation.html">Accomodation</a></li>
-                            <li><a href="Tour Guides.html">Tour Guides</a></li>
-                            <li><a href="Contact Us.html">Contact Us</a></li>
-                        </ul>
-                    </div>
+                    <ul>
+                        <li><a href="Sri Lanka & Tourism.html">Sri Lanka & Tourism</a></li>
+                        <li><a href="Places to Visit.html">Places to Visit</a></li>
+                        <li><a href="Accommodation.html">Accomodation</a></li>
+                        <li><a href="Tour Guides.html">Tour Guides</a></li>
+                        <li><a href="Contact Us.html">Contact Us</a></li>
+                    </ul>
                 </div>
 
                 <div class="footer-items">
                     <h2>Contact Us</h2>
-                    <div class="border"></div>
                     <ul>
-                        <li><i class="fas fa-mobile-alt" aria-hidden="true"></i>0779348204</li>
-                        <li><i class="fas fa-phone" aria-hidden="true"></i>0913566788</li>
-                        <li><i class="fas fa-envelope" aria-hidden="true"></i>sltour@gmail.com</li>
+                        <li><i class="fas fa-mobile-alt" aria-hidden="true" style="margin-right: 28px;"></i><a href="tel:0779348204">0779348204</a></li>
+                        <li><i class="fas fa-phone" aria-hidden="true"></i><a href="tel:0913566788">0913566788</a></li>
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:sltour@gmail.com">sltour@gmail.com</a></li>
                     </ul>
                     <br>
-                    <div class="social-media" style="float: left;">
+                    <div class="social-media">
                         <a href="#"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
                         <a href="#"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
                         <a href="#"><i class="fab fa-instagram-square" aria-hidden="true"></i></a>
@@ -529,7 +539,9 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                Copyright &copy; SL Tour 2020. All rights reserved.
+                <p>Copyright &copy; SL Tour 2020. All rights reserved by Sri Lanka Tourism Promotion Bureau.
+                    <br>SE/2017/048
+                </p>
             </div>
         </div>
         
