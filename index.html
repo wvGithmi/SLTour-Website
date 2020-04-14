@@ -15,34 +15,136 @@
             body{
                 margin: 0px;
                 padding: 0px;
+                overflow-x: hidden;
             }
 
             /*Styling background*/
             section{
                 background-image: linear-gradient(rgba(0,0,0,0.7) 30%, rgba(0,0,0,0.7) 30%), url("Background.jpg");
                 width: 100%;
-                height: 50px;
+                height: calc(100vh - 80px);
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-attachment: fixed;
+                -webkit-background-attachment: fixed;
+                -moz-background-attachment: fixed;
+                -o-background-attachment: fixed;
                 background-size: cover;
                 -webkit-background-size: cover;
-                -mox-background-size: cover;
+                -moz-background-size: cover;
                 -o-background-size: cover;
-                height: calc(100vh - 80px);
+            }
+
+            @media screen and (max-width: 1024px){
+                section{    
+                    width: 100%;
+                    height: 500px;
+                    background-attachment: scroll;
+                    -webkit-background-attachment: scroll;
+                    -moz-background-attachment: scroll;
+                    -o-background-attachment: scroll;
+                }     
+            }
+
+            @media screen and (max-width: 740px){
+                section{
+                    width: 100%;
+                    height: 300px;
+                    background-attachment: scroll;
+                    -webkit-background-attachment: scroll;
+                    -moz-background-attachment: scroll;
+                    -o-background-attachment: scroll;
+                }
             }
 
             /*Text styling*/
             .text{
                 color: rgb(255, 255, 255);
-                margin-left: 6vw;
+                margin-left: 120px;
                 font-family: sans-serif;
             }
 
-            .text a:hover{
-                background: black;
-                opacity: 0.6;
-                padding: 0.3vw 0.3vw;
+            .text h1{
+                font-size: 90px; 
+                padding-top: 100px;
+            }
+
+            .text p{
+                font-size: 25px;
+                padding-top: 10px;
+            }
+
+            p i{
+                font-size: 24px;
+                color: white;
+                padding-top: 20px;
+                margin-left: 120px;
+            }
+
+            p a{
+                font-size: 22px;
+                color: white;
+                margin-left: 10px;
+                text-decoration: none;
+            }
+
+            p a:hover{
+                background: none;
+                color: yellow;
+            }
+
+            marquee{
+                margin-top: 300px;
+                font-weight: bold;
+                color: yellow;
+                font-size: 20px;
+            }
+
+            @media screen and (max-width: 1024px){
+                .text{
+                    text-align: center;
+                    margin-left: 0px;
+                }
+
+                p i{
+                    margin-left: 300px;
+                }
+
+                marquee{
+                    margin-top: 150px;
+                }
+            }
+
+            @media screen and (max-width: 740px){
+                .text{
+                    color: darkblue;
+                    text-align: center;
+                    margin-left: 0px;
+                }
+
+                .text h1{
+                    font-size: 65px; 
+                    padding-top: 320px;
+                }
+
+                .text p{
+                    font-size: 22px;
+                    padding-top: 10px;
+                }
+
+                p i{
+                    color: darkblue;
+                    margin-left: 130px;
+                }
+
+                p a{
+                    color: darkblue;
+                    margin-right: 80px;
+                }
+
+                marquee{
+                    display: none;
+                }
             }
         </style>
 
@@ -67,32 +169,22 @@
         </nav>
 
         <section>
-            <!--Heading-->
             <div class="text">
-                <h1 style="font-size: 6.5vw; padding-top: 5.5vw;">LOVE SRI LANKA</h1>
+                <!--Heading-->
+                <h1>LOVE SRI LANKA</h1>
+                <!--Quote-->
+                <p>Have the best traveling experience in Sri Lanka</p>
             </div>
 
-            <!--Quote-->
-            <p class="text" style="font-size: 1.95vw; padding-top: 1vw;">
-                Have the best traveling experience in Sri Lanka
-            </p>
-                
             <!--Video-->
-            <p class="text">
-                <i class="far fa-play-circle" style="font-size: 2vw; color: white; padding-top: 2vw; padding-bottom: 15vw;"></i>
-                <a href="y2mate.com - SRI LANKA _ Cinematic Travel Film__QV2qKNjxmY_1080p.mp4" 
-                target="_blank" 
-                style="font-size: 1.75vw; 
-                        color: white;
-                        margin-left: 0.5vw;
-                        text-decoration: none;">
-                <b><i>Watch Tourism of Sri Lanka</i></b></a>
+            <p>
+                <i class="far fa-play-circle"></i>
+                <a href="y2mate.com - SRI LANKA _ Cinematic Travel Film__QV2qKNjxmY_1080p.mp4" target="_blank">Watch Tourism of Sri Lanka</a> 
             </p>
             
             <!--Moving Text-->
-            <marquee direction="right" width="100%" behavior="scroll" scrollamount="10">
-                <b style="color: goldenrod; font-size: 2vw;">SRI LANKA</b><I style="color: yellow; font-size: 2vw;">  Wonder of Asia</I>
-            </marquee>
+            <marquee  direction="right" width="100%" behavior="scroll" scrollamount="10"><p>SRI LANKA Wonder of Asia</p></marquee>
         </section>
+
     </body>
 </html>

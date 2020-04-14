@@ -10,6 +10,52 @@
             body{
                 margin: 0;
                 padding: 0;
+                overflow-x: hidden;
+            }
+
+            /*Stylng images*/
+            .img-1{
+                height: 250px;
+                width: 575px;
+                border: 1px solid black;
+                padding: 3px;
+                margin: 50px 0px 20px 120px;
+            }
+
+            .img-2{
+                height: 250px;
+                width: 500px;
+                border: 1px solid black;
+                padding: 3px;
+                margin: 50px 0px 20px 500px;
+            }
+
+            @media screen and (max-width: 1024px){
+                .img-1{
+                    height: 150px;
+                    width: 330px;
+                    margin: 50px 0px 20px 120px;
+                }
+
+                .img-2{
+                    height: 200px;
+                    width: 450px;
+                    margin: 50px 0px 20px 300px;
+                }
+            }
+
+            @media screen and (max-width: 740px){
+                .img-1{
+                    height: 180px;
+                    width: 350px;
+                    margin: 50px 200px 0px 200px;
+                }
+
+                .img-2{
+                    height: 150px;
+                    width: 330px;
+                    margin: 50px 0px 20px 190px;
+                }
             }
 
             /*Styling transbox & paragraphs*/
@@ -25,6 +71,19 @@
                 font-style: oblique;
                 text-align: justify;
                 font-size: 20px;
+            }
+
+            @media screen and (max-width: 1024px){
+                .transbox{
+                    margin: 30px 50px 0px 50px;
+                }
+            }
+
+            @media screen and (max-width: 740px){
+                .transbox {
+                    margin: 30px 50px 0px 50px;
+                    font-size: 15px;
+                }
             }
 
             /*Styling horizontal line*/
@@ -89,8 +148,8 @@
         <!--Sub-Headings & Paragraphs-->
         <h1 id="heading">Sri Lanka</h1>
 
-        <img src="Perahara.jfif" height="250px" width="500px" alt="Sacred Tooth Relic" style="margin: 50px 120px 20px 200px; border: 1px solid black; padding: 3px;">
-        <img src="Yapahuwa Kingdom.jfif" height="250px" width="500px" alt="Yapahuwa Kingdom" style="margin: 50px 0px 20px 0px; border: 1px solid black; padding: 3px;">
+        <img class="img-1"src="Perahara.jfif" alt="Sacred Tooth Relic">
+        <img class="img-1" src="Yapahuwa Kingdom.jfif" alt="Yapahuwa Kingdom">
 
         <p>
             <div class="transbox">
@@ -150,10 +209,10 @@
 
         <h1 id="heading">Tourism of Sri Lanka</h1>
 
-        <img src="Tea.jfif" height="300px" width="300px" alt="Tea" style="margin: 95px 20px 50px 120px; float: left; border: 1px solid black; padding: 3px;">
+        <img class="img-2" src="Tea.jfif" alt="Tea">
 
         <p>
-            <div class="transbox" style="margin-left: 460px;">
+            <div class="transbox">
                     Sri Lanka's tourism industry become more powerful in the last few years after the civil war. The tourism industry focuses on eco-friendliness and "quality 
                     not quantity".
                 <br>The strategic development plan of Sri Lanka Tourism strives for 1.5 million visitors in total (130,000 from Germany) in 2014, 2.5 million in 2016 and 4 million 
@@ -174,10 +233,10 @@
 
         <h1 id="heading">Why we should visit Sri Lanka</h1>
 
-        <img src="Galle Light House.jfif" height="200px" width="350px" alt="Galle Light House" style="margin: 50px 120px 0px 20px; float: right; border: 1px solid black; padding: 3px;">
+        <img class="img-2" src="Galle Light House.jfif" alt="Galle Light House">
 
         <p>
-            <div class="transbox" style="margin-right: 510px;">
+            <div class="transbox">
                     There are so many reasons why we should visit Sri Lanka. This beautiful island has so many varieties of places to visit and enjoy.
                 <br>Sri Lanka has wildlife biodiversity, incredible sights, cultural heritage, travel convenience, good climate, caves, tea plantations, exciting hotel services, 
                     peaceful beaches, forests, mountains, etc. Therefore, you can have wildlife tours, beach fun, heritage sites tours, diving tours, tea estates visits, surfing 
@@ -212,7 +271,6 @@
                         <li><i class="fas fa-phone" aria-hidden="true"></i><a href="tel:0913566788">0913566788</a></li>
                         <li><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:sltour@gmail.com">sltour@gmail.com</a></li>
                     </ul>
-                    <br>
                     <div class="social-media">
                         <a href="#"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
                         <a href="#"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>

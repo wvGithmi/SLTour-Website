@@ -12,6 +12,32 @@
     animation: textanimation 1s ease-in-out;
 }
 
+/*Styling sub-headers*/
+#heading{
+    text-align: left;
+    padding-left: 60px;
+    padding-top: 20px;
+    font-family: monospace;
+    font-style: oblique;
+    color: rgb(126, 9, 9);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1024px){
+    #heading{
+        text-align: left;
+        padding-left: 40px;
+    }
+}
+
+@media screen and (max-width: 740px){
+    #heading{
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
 @keyframes textanimation{
     0%{
         letter-spacing: 2vw;
@@ -21,14 +47,3 @@
     }
 }
 
-/*Styling sub-headers*/
-#heading{
-    text-align: left;
-    padding-left: 4vw;
-    padding-top: 1vw;
-    font-family: monospace;
-    font-style: oblique;
-    color: rgb(126, 9, 9);
-    font-size: 2.5vw;
-    font-weight: bold;
-}
